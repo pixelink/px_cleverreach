@@ -1,0 +1,19 @@
+.form-row {
+	margin-bottom:10px;
+}
+.form-row label {
+	display:inline-block;
+	width:120px;
+}
+.form-row input ,
+.form-row textarea {
+	width:250px;
+}
+.form-row input.submit {
+	margin-left:124px;
+	width:264px;
+}
+
+.f3-form-error {
+	border-color:red;
+}

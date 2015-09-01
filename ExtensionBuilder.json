@@ -1,0 +1,149 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    282,
+                    86
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Newsletter",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1249112008043"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "1050790928626"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "subject",
+                            "propertyType": "String",
+                            "uid": "971567064361"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "senderName",
+                            "propertyType": "String",
+                            "uid": "908393151770"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "senderEmail",
+                            "propertyType": "String",
+                            "uid": "1225373572019"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "groupId",
+                            "propertyType": "String",
+                            "uid": "1374035773953"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "pageId",
+                            "propertyType": "String",
+                            "uid": "526242569284"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Newsletter => list,show,create"
+                },
+                "description": "Create cleverreach newsletter from TYPO3 page",
+                "key": "newsletter",
+                "mainModule": "web",
+                "name": "Newsletter",
+                "tabLabel": ""
+            }
+        ],
+        "description": "Create cleverreach newsletter from TYPO3 page",
+        "emConf": {
+            "category": "module",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": ""
+        },
+        "extensionKey": "px_cleverreach",
+        "name": "Pixelink Newsletter",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "Pixel Ink",
+                "email": "lu.jakob@googlemail.com",
+                "name": "Lukas Jakob",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "PIXELINK"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2015-02-16 03:45",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

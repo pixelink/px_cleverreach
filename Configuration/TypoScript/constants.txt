@@ -1,0 +1,34 @@
+
+module.tx_pxcleverreach {
+	view {
+		# cat=module.tx_pxcleverreach/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:px_cleverreach/Resources/Private/Backend/Templates/
+		# cat=module.tx_pxcleverreach/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:px_cleverreach/Resources/Private/Backend/Partials/
+		# cat=module.tx_pxcleverreach/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:px_cleverreach/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_pxcleverreach//a; type=string; label=Default storage PID
+        # do not set storage pid. this is set automatically to current page
+		storagePid =
+	}
+    settings {
+        # cleverreach api key
+        apiKey = 0b7ddc6ed058bfb5a4b154f86587d448-2
+        # cleverreach wsdl url
+        wsdlUrl = http://api.cleverreach.com/soap/interface_v5.1.php?wsdl
+        # cleverreach account base url for the email detail view
+        emailBaseUrl = http://eu1.cleverreach.com/admin/mailing_create_editor.php?id=
+        # email settings
+        email {
+            sender_default_name = Sender default email
+            sender_default_email = Sender default name
+        }
+        # template settings
+        template {
+            # newsletter plaintext template
+            plain = typo3conf/ext/px_cleverreach/Resources/Public/Backend/Templates/NewsletterPlain.txt
+        }
+    }
+}

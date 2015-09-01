@@ -1,0 +1,41 @@
+
+<f:layout name="Default" />
+
+
+
+<f:section name="content">
+	<f:be.container includeCssFiles="{0:'{f:uri.resource(path:\'Backend/css/newsletterList.css\')}'}"></f:be.container>
+
+	<h1>Newsletter anzeigen</h1>
+	<f:link.action action="new" class="t3-button"><f:translate key="tx_pxcleverreach_domain_model_newsletter.new" /></f:link.action>
+	<br><br>
+
+	<f:flashMessages />
+
+<table  class="tx_pxcleverreach list" >
+	<tr>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.crdate" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.pid" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.title" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.subject" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.group_name" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.group_id" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.email_id" /></th>
+		<th><f:translate key="tx_pxcleverreach_domain_model_newsletter.show" /></th>
+	</tr>
+
+	<f:for each="{newsletters}" as="newsletter">
+		<tr>
+			<td><f:format.date format="d.m.Y">{newsletter.crdate}</f:format.date></td>
+			<td>{newsletter.pid}</td>
+			<td>{newsletter.title}</td>
+			<td>{newsletter.subject}</td>
+			<td>{newsletter.groupName}</td>
+			<td>{newsletter.groupId}</td>
+			<td>{newsletter.emailId}</td>
+			<td><a href="{settings.emailBaseUrl}{newsletter.emailId}" target="_blank"><f:translate key="tx_pxcleverreach_domain_model_newsletter.show" /></a></td>
+		</tr>
+	</f:for>
+</table>
+
+</f:section>

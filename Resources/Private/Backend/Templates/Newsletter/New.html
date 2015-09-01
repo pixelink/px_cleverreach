@@ -1,0 +1,53 @@
+<f:layout name="Default" />
+
+<f:section name="content">
+	<f:be.container includeCssFiles="{0:'{f:uri.resource(path:\'Backend/css/newsletter.css\')}'}"></f:be.container>
+
+	<h1>Neuen Newsletter erzeugen</h1>
+
+<f:flashMessages />
+
+<f:render partial="FormErrors" />
+
+<f:form action="create" name="newNewsletter" object="{newNewsletter}">
+	<div class="form-row">
+		<label for="title">
+			<f:translate key="tx_pxcleverreach_domain_model_newsletter.title" />
+		</label>
+		<f:form.textfield property="title" />
+	</div>
+
+	<div class="form-row">
+		<label for="subject">
+			<f:translate key="tx_pxcleverreach_domain_model_newsletter.subject" />
+		</label>
+		<f:form.textfield property="subject" />
+	</div>
+
+	<div class="form-row">
+		<label for="senderName">
+			<f:translate key="tx_pxcleverreach_domain_model_newsletter.sender_name" />
+		</label>
+		<f:form.textfield property="senderName" />
+	</div>
+
+	<div class="form-row">
+		<label for="senderEmail">
+			<f:translate key="tx_pxcleverreach_domain_model_newsletter.sender_email" />
+		</label>
+		<f:form.textfield property="senderEmail" />
+	</div>
+
+	<div class="form-row">
+		<label for="groupId">
+			<f:translate key="tx_pxcleverreach_domain_model_newsletter.group_id" />
+		</label>
+		<f:form.select name="groupId" property="groupId" options="{groups}" prependOptionLabel="<f:translate key='tx_pxcleverreach_domain_model_newsletter.group_id_empty' />" prependOptionValue="" />
+	</div>
+
+	<div class="form-row">
+		<f:form.submit value="<f:translate key='tx_pxcleverreach_domain_model_newsletter.create' />" class="submit" />
+	</div>
+
+</f:form>
+</f:section>

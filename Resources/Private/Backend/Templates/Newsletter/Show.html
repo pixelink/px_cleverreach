@@ -1,0 +1,72 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Single View for Newsletter</h1>
+
+<f:flashMessages />
+	<table class="tx-pixelink-newsletter" >
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.title" />
+			</td>
+			<td>
+				{newsletter.title}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.subject" />
+			</td>
+			<td>
+				{newsletter.subject}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.sender_name" />
+			</td>
+			<td>
+				{newsletter.senderName}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.sender_email" />
+			</td>
+			<td>
+				{newsletter.senderEmail}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.group_id" />
+			</td>
+			<td>
+				{newsletter.groupId}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<f:translate key="tx_pxcleverreach_domain_model_newsletter.page_id" />
+			</td>
+			<td>
+				{newsletter.pageId}
+			</td>
+		</tr>
+	</table>
+
+	<f:link.action action="list">Back to list</f:link.action><br />
+<f:link.action action="create">New Newsletter</f:link.action>
+</f:section>

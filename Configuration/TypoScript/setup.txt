@@ -1,0 +1,38 @@
+
+ # Module configuration
+module.tx_pxcleverreach {
+	persistence {
+		storagePid = {$module.tx_pxcleverreach.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_pxcleverreach.view.templateRootPath}
+		partialRootPath = {$module.tx_pxcleverreach.view.partialRootPath}
+		layoutRootPath = {$module.tx_pxcleverreach.view.layoutRootPath}
+	}
+    settings {
+        # cleverreach api key
+        apiKey = {$module.tx_pxcleverreach.settings.apiKey}
+        # cleverreach wsdl url
+        wsdlUrl = {$module.tx_pxcleverreach.settings.wsdlUrl}
+        # source
+        source = TYPO3
+        # cleverreach account base url for the email detail view
+        emailBaseUrl = {$module.tx_pxcleverreach.settings.emailBaseUrl}
+        # template plain
+        template {
+            plain = {$module.tx_pxcleverreach.settings.template.plain}
+        }
+        email {
+            sender_default_email = {$module.tx_pxcleverreach.settings.email.sender_default_email}
+            sender_default_name = {$module.tx_pxcleverreach.settings.email.sender_default_name}
+        }
+    }
+}
+
+ config.tx_extbase.persistence.classes {
+     PIXELINK\PxCleverreach\Domain\Model\Newsletter {
+         mapping {
+             columns.crdate.mapOnProperty = crdate
+         }
+     }
+ }

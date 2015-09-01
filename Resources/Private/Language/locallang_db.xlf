@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-16T15:45:19Z" product-name="px_cleverreach">
+		<header/>
+		<body>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter">
+				<source>Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.subject">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.sender_name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.sender_email">
+				<source>Sender Email</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.group_id">
+				<source>Group Id</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.group_name">
+				<source>Group Name</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.crdate">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.email_id">
+				<source>Email Id</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

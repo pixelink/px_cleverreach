@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">s
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-16T15:45:19Z" product-name="px_cleverreach">
+		<header/>
+		<body>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter">
+				<source>Newsletter</source>
+				<target>Newsletter</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.pid">
+				<source>Pid</source>
+				<target>Pid</target>
+			</trans-unit>
+
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.subject">
+				<source>Subject</source>
+				<target>Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.sender_name">
+				<source>Sender Name</source>
+				<target>Sender Name</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.sender_email">
+				<source>Sender Email</source>
+				<target>Sender Email</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.group_id">
+				<source>Group Id</source>
+				<target>Versandgruppe</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.group_name">
+				<source>Group Name</source>
+				<target>Gruppenname</target>
+			</trans-unit>
+
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.crdate">
+				<source>Date</source>
+				<target>Datum</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.email_id">
+				<source>Email Id</source>
+				<target>Email Id</target>
+			</trans-unit>
+
+			<trans-unit id="pixelinknewsletter_newsletter.list_header">
+				<source>Show newsletters</source>
+				<target>Newsletter anzeigen</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.show">
+				<source>Show</source>
+				<target>Anzeigen</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.new">
+				<source>Create new newsletter</source>
+				<target>Neuen Newsletter erstellen</target>
+			</trans-unit>
+
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.create">
+				<source>Create new newsletter</source>
+				<target>Newsletter anlegen</target>
+			</trans-unit>
+			<trans-unit id="tx_pxcleverreach_domain_model_newsletter.group_id_empty">
+				<source>Please choose</source>
+				<target>Bitte wählen</target>
+			</trans-unit>
+
+			<trans-unit id="newNewsletter.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="newNewsletter.subject">
+				<source>Subject</source>
+				<target>Betreff</target>
+			</trans-unit>
+			<trans-unit id="newNewsletter.groupId">
+				<source>Group ID</source>
+				<target>Versandgruppe</target>
+			</trans-unit>
+
+			<trans-unit id="pixelinknewsletter_newsletter.api_error">
+				<source>An error occured with the api connection: </source>
+				<target>Es ist ein Fehler mit der API-Verbindung aufgetreten: </target>
+			</trans-unit>
+			<trans-unit id="pixelinknewsletter_newsletter.newsletter_created">
+				<source>Your newsletter was created in your Cleverreach Account, but not sent. The delivery of the newsletter has to be started manually.</source>
+				<target>Ihr Newsletter wurde im CleverReach Account erzeugt, jedoch noch nicht versandt. Der Versand muss im CleverReach Account manuell gestartet werden.</target>
+			</trans-unit>
+            <trans-unit id="pixelinknewsletter_newsletter.newsletter_created_header">
+                <source>Newsletter created</source>
+                <target>Newsletter erzeugt</target>
+            </trans-unit>
+			<trans-unit id="pixelinknewsletter_newsletter.newsletter_not_created">
+				<source>Your newsletter could not be created because an error occured.</source>
+				<target>Es ist ein Fehler aufgetreten. Ihr Newsletter konnte nicht erzeugt werden.</target>
+			</trans-unit>
+			<trans-unit id="pixelinknewsletter_newsletter.newsletter_detail_link">
+				<source><![CDATA[Click <a href="%s" target="_blank">here</a> to show your newsletter in cleverreach.]]></source>
+				<target><![CDATA[Klicken Sie <a href="%s" target="_blank">hier</a> um den Newsletter im Cleverreach anzuzeigen.]]></target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
